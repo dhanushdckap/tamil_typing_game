@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="usernamePopup">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="usernameInput" placeholder="Enter your name" />
+        <button id="submitUsername">Submit</button>
+    </div>
+
+    <div id="game" class="hidden">
+        <p id="paragraph">This is a sample paragraph for the typing game. Type it as fast as you can!</p>
+        <input type="text" id="playerInput" placeholder="Start typing here" />
+        <button id="startButton">Start</button>
+        <button id="stopButton" disabled>Stop</button>
+        <button id="scoreButton" disabled>Show Scoreboard</button>
+        <div id="timer">Time left: <span id="time">30</span> seconds</div>
+    </div>
+
+    <div id="scoreboard" class="hidden">
+        <h2>Scoreboard</h2>
+        <div id="scores"></div>
+        <button id="closeScoreboard">Close</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

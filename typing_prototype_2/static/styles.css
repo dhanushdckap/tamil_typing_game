@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#usernamePopup, #game, #scoreboard {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#usernamePopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#usernameInput {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+#game #paragraph {
+    font-size: 24px;
+    margin-bottom: 20px;
+    white-space: pre-wrap; /* Preserve spaces and line breaks */
+}
+
+.highlight-correct {
+    background-color: lightgreen;
+}
+
+.highlight-incorrect {
+    background-color: lightcoral;
+}
+
+#playerInput {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+#timer {
+    margin: 20px 0;
+}
+
+button {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#scoreboard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#closeScoreboard {
+    margin-top: 10px;
+}
