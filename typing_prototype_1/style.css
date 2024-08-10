@@ -1,0 +1,280 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#typing-area {
+    width: 90%;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+}
+
+.keyboard {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.scoreboard-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.scoreboard-popup h2 {
+    margin-bottom: 20px;
+}
+
+#score-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#close-scoreboard {
+    padding: 10px 20px;
+    background-color: #252424;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#show-scoreboard {
+    margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Be+Vietnam+Pro:wght@300&family=Montserrat&family=Roboto+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: #373737;
+}
+.keys {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: #252424;
+    color: white;
+    border: 0;
+    font-size: 16px;
+}
+.container {
+    border: solid 10px #373737;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.centerPortion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.Delete, .Backspace, .Enter, .Shift {
+    border-radius: 5px;
+    background-color: #252424;
+    color: white;
+    border: 0;
+    padding: 10px;
+}
+.topPortion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 10px;
+}
+.grid-container {
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    background-color: #202020;
+    padding: 10px;
+    gap: 10px;
+}
+.grid-item {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    border-radius: 3px;
+    background-color: #202020;
+    padding: 10px;
+    gap: 10px;
+}
+.grid1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    border-radius: 3px;
+    background-color: #202020;
+    padding: 10px;
+    gap: 10px;
+}
+.grid2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+    border-radius: 3px;
+    background-color: #202020;
+    padding: 10px;
+    gap: 10px;
+}
+.grid3 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 10px;
+}
+.grid4 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 10px;
+}
+.keyset {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: #252424;
+    color: white;
+    border: 0;
+    font-weight: 600;
+}
+.Space_bar {
+    width: 360px;
+}
+.btnStyle {
+    margin-left: 5px;
+}
+.arrowKeys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.up_arror, .down_arrow, .left_arrow, .right_arrow {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #252424;
+    color: white;
+    border: 0;
+}
+button:active {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-weight: bold;
+    transform: translateY(3px);
+}
+.boxContainer {
+    background-color: #373737;
+}
+.number {
+    text-align: start;
+    margin-left: 9px;
+    font-weight: 600;
+}
+.key {
+    font-weight: 600;
+    margin-left: 15px;
+}
+textarea {
+    width: 80%;
+    height: 150px;
+    font-size: x-large;
+    background-color: rgba(71, 164, 245, 0);
+    border-radius: 10px;
+    border: solid 1px white;
+    outline: none;
+    color: rgba(33, 27, 27, 0.843);
+    margin: 20px auto;
+    border-color: black;
+}
+.toggle {
+    background-color: rgb(14, 143, 172);
+}
+.textarea {
+    display: flex;
+}
+.suggestionDiv {
+    margin-top: 20px;
+    height: 150px;
+    width: 180px;
+    overflow: scroll;
+    text-align: center;
+    margin-left: 70px;
+}
+li {
+    background-color: #6B6F75;
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
